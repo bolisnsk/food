@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>하양 맛집 소개</title>
+    <style media="screen">
+      body{
+        margin:0px;
+         font-family: "Malgun Gothic";
+         background-color:#F3F3F3;
+      }
+      #box{
+        position:relative;
+        height:1000px;
+        margin:10px;
+      }
+
+      .img{
+        position: relative;
+        background-image:url(0222.jpg);
+        background-repeat: no-repeat;
+        height: 40vh;
+        background-size: cover;
+      }
+
+      .img .content{
+        position: absolute;
+        font-family: "Malgun Gothic";
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        font-size:28px;
+        color: white;
+        z-index: 2;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="img">
+       <div class="content">
+           <h3>어서오십쇼!</h3>
+       </div>
+       <div class="img-cover"></div>
+   </div>
+    <div id="box">
+        <h2>한식</h2>
+        <hr>
+        <h2>양식</h2>
+        <hr>
+        <h2>중식</h2>
+        <hr>
+        <h2>카페/디저트</h2>
+        <hr>
+    </div>
+  </body>
+</html>
