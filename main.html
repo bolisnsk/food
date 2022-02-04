@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>하양 맛집 소개</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-
+    
     <style media="screen">
       body{
         margin:0px;
@@ -13,8 +11,19 @@
          background-color:#F3F3F3;
       }
 
-       .container {width: 990px; margin: 0 auto; height: inherit; /* background: rgba(255,255,255,0.3);*/}
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: #F3F3F3;
+        padding: 10px;
+      }
 
+      .grid-container > div {
+        background-color: #F3F3F3;
+        border: 10px solid #F3F3F3;
+        text-align: center;
+        font-size: 30px;
+      }
       .img{
         position: relative;
         background-image:url(0222.jpg);
@@ -35,17 +44,8 @@
         text-align: center;
       }
 
-      .gal{
-        margin: 5px;
-        border: 1px solid #ccc;
-        width: 150px;
-        float: left;
-      }
+  
 
-      .gal img{
-        width: 100%;
-        height: auto;
-      }
 
     </style>
 
@@ -58,15 +58,17 @@
        <div class="img-cover"></div>
    </div>
         <h2>한식</h2>
-      <div class="container">
-        <div class="gal">
+      <div class="grid-container">
+      
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
-        </div>
+          <div><img src="./012.jpg"></div>
+          <div><img src="./012.jpg"></div>
+    
       </div>
         <br><hr>
         <h2>양식</h2>
