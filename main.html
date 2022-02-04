@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>하양 맛집 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="js/slick.css">
+
     <style media="screen">
       body{
         margin:0px;
          font-family: "Malgun Gothic";
          background-color:#F3F3F3;
-      }
-      #box{
-        position:relative;
-        height:1000px;
-        margin:10px;
       }
 
       .img{
@@ -35,7 +33,20 @@
         text-align: center;
       }
 
+      .gal{
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 150px;
+        float: left;
+      }
+
+      .gal img{
+        width: 100%;
+        height: auto;
+      }
+
     </style>
+
   </head>
   <body>
     <div class="img">
@@ -44,9 +55,22 @@
        </div>
        <div class="img-cover"></div>
    </div>
-    <div id="box">
+    <div>
         <h2>한식</h2>
+        <div class="gal">
+          <div><img src=012.jpg></div>
+          <div><img src=012.jpg></div>
+          <div><img src=012.jpg></div>
+          <div><img src=012.jpg></div>
+          <div><img src=012.jpg></div>
+          <div><img src=012.jpg></div>
+        </div>
+    </div>
+        <br>
         <hr>
+        <br/><br/><br/><br/>
+
+
         <h2>양식</h2>
         <hr>
         <h2>중식</h2>
@@ -54,5 +78,12 @@
         <h2>카페/디저트</h2>
         <hr>
     </div>
+
+    <script src="js/slick.min.js"></script>
+    <script type=text/javascript>
+      $(".gal").slick({
+
+      });
+    </script>
   </body>
 </html>
