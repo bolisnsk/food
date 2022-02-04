@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>하양 맛집 소개</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="js/slick.css">
 
     <style media="screen">
       body{
@@ -13,10 +11,24 @@
          background-color:#F3F3F3;
       }
 
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: #F3F3F3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: #F3F3F3;
+        border: 10px solid #F3F3F3;
+        text-align: center;
+        font-size: 30px;
+      }
       .img{
         position: relative;
         background-image:url(0222.jpg);
         background-repeat: no-repeat;
+        width: 140vh;
         height: 40vh;
         background-size: cover;
       }
@@ -33,17 +45,8 @@
         text-align: center;
       }
 
-      .gal{
-        margin: 5px;
-        border: 1px solid #ccc;
-        width: 150px;
-        float: left;
-      }
 
-      .gal img{
-        width: 100%;
-        height: auto;
-      }
+
 
     </style>
 
@@ -55,22 +58,20 @@
        </div>
        <div class="img-cover"></div>
    </div>
-    <div>
         <h2>한식</h2>
-        <div class="gal">
-          <div><img src="012.jpg"></div>
-          <div><img src="012.jpg"></div>
-          <div><img src="012.jpg"></div>
-          <div><img src="012.jpg"></div>
-          <div><img src="012.jpg"></div>
-          <div><img src="012.jpg"></div>
-        </div>
-    </div>
-        <br>
-        <hr>
-        <br/><br/><br/><br/>
+      <div class="grid-container">
 
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
+          <div><img src="./0122.jpg"></div>
 
+      </div>
+        <br><hr>
         <h2>양식</h2>
         <hr>
         <h2>중식</h2>
@@ -78,11 +79,16 @@
         <h2>카페/디저트</h2>
         <hr>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script type=text/javascript>
+    <script type="text/javascript">
       $(".gal").slick({
-
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true
       });
     </script>
   </body>
