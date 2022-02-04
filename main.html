@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>하양 맛집 소개</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="js/slick.css">
+    <link rel="stylesheet" href="css/slick.css">
 
     <style media="screen">
       body{
@@ -13,9 +13,11 @@
          background-color:#F3F3F3;
       }
 
+       .container {width: 990px; margin: 0 auto; height: inherit; /* background: rgba(255,255,255,0.3);*/}
+
       .img{
         position: relative;
-        background-image:url(012.jpg);
+        background-image:url(0222.jpg);
         background-repeat: no-repeat;
         height: 40vh;
         background-size: cover;
@@ -55,8 +57,8 @@
        </div>
        <div class="img-cover"></div>
    </div>
-    <div>
         <h2>한식</h2>
+      <div class="container">
         <div class="gal">
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
@@ -65,12 +67,8 @@
           <div><img src="./012.jpg"></div>
           <div><img src="./012.jpg"></div>
         </div>
-    </div>
-        <br>
-        <hr>
-        <br/><br/><br/><br/>
-
-
+      </div>
+        <br><hr>
         <h2>양식</h2>
         <hr>
         <h2>중식</h2>
@@ -78,10 +76,9 @@
         <h2>카페/디저트</h2>
         <hr>
     </div>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
-      <script type="text/javascript">
+    <script type="text/javascript">
       $(".gal").slick({
         infinite: true,
         slidesToShow: 3,
