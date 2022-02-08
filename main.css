@@ -1,19 +1,28 @@
 body{
     margin:0px;
-    font-family: "Malgun Gothic";
+    font-family: 'Jua', sans-serif;
     background-color:#F3F3F3;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #F3F3F3;
-    padding: 10px;
-    grid-gap: 10px;
+h2{
+    padding-left: 20px;
+    color:dimgray;
+    text-align: center;
+    font-size: 40px;
 }
 
+a{
+    text-decoration-line: none;
+}
 
+.about{
+    text-align: right;
+    color: dimgray;
+    font-size: 30px;
+    padding: 10px; 10px;
+}
 
+/* 사이트 간판 */                
 img{
     width: 100%;
     height: auto;
@@ -21,7 +30,7 @@ img{
 
 .imges{
     position: relative;
-    background-image:url(012.jpg);
+    background-image:url(0222.jpg);
     background-repeat: no-repeat;
     height: 30vh;
     background-size: cover;
@@ -40,24 +49,18 @@ img{
     text-align: center;
 }
 
+/* 그리드 */   
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #F3F3F3;
+    padding: 10px;
+    grid-gap: 10px;
+    
+}
+
 .location-listing {
   position: relative;
-}
-
-.location-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: grey;
-}
-
-h2{
-    padding-left: 20px;
-    color:dimgray;
-    text-align: center;
-    font-size: 40px;
 }
 
 /* hover styles */
@@ -106,7 +109,7 @@ h2{
 }
 
 
-/* for touch screen devices */
+/* 모바일화면 터치 */
 @media (hover: none) { 
   .location-title {
     opacity: 1;
@@ -115,4 +118,5 @@ h2{
     filter: blur(2px);
   }
 }
+
 
