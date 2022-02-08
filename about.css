@@ -1,0 +1,112 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Jua', sans-serif;
+    background-color:#F3F3F3;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+   
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+hr{
+    padding-top: 20px;
+}
+
+/* 메뉴바 */
+#menu{
+    width: auto;
+    height: 50px;
+    outline: 1px solid white;
+}
+
+#menu ul li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 50px;
+    vertical-align: middle; 
+    text-align: center;
+    background: white;
+    font-size: 20px;
+}
+
+#menu ul li:first-child{
+    border-left: none;
+}
+
+#menu ul li a{
+    display: block;
+    color: black;
+}
+
+#menu ul li a:hover{
+    background: grey;
+    color: white;
+}
+
+<!-- 본문 -->
+.inner{
+   padding: 100px 30px 20px 30px;
+}
+
+.inner p{
+    font-size: 20px; padding-top: 10px; padding-bottom: 40px; text-align: center
+}
+
+figure{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+figcaption{
+    background-color: white;
+    position: absolute;
+    left:280px;
+    top:20px;
+    
+}
+
+.fn{
+    font-size: 30px;
+}
+
+.dnl{
+    padding-top: 15px;
+    font-size: 20px;
+    color: grey;
+}
+
+.pls{
+    padding-top: 100px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.foodlist{
+    padding: 30px 70px;
+    background-color: white;
+}
+
+.foodli{
+    padding: 0px 400px;
+}
+
+.fooditem{
+    width:800px;
+    background-color: white;
+    position: relative;
+    display: block;
+}
