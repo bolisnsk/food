@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>하양 맛집 소개</title>
         <link rel="stylesheet" href="about.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
     <body>
         <main>
+        <article class="contents">
         <nav id=menu>
             <ul>
                 <li> <a href="#">한식</a></li>
@@ -20,14 +22,15 @@
             <h1>한식</h1>
             <p>한국인은 밥심!</p>
         </header>
+            <div style="background-color: white;">
             <section class="foodlist">
-                <ul>
+                <ul class="rest">
                     <li class="foodli">
                         <div class="fooditem">
                             <figure>
-                                <img src="./imges/하양연가.jpg" width="250px" height="250px"/>
+                                <img src="./imges/하양연가.jpg" width="250px" height="200px"/>
                                 <figcaption>
-                                    <div style="width:500px">
+                                    <div style="width:100%; position: relative;">
                                         <span>
                                             <h2 class="fn">하양연가</h2>
                                             <p class="dnl">경북 경산시 하양읍 대경로 669-3</p>
@@ -45,7 +48,7 @@
                             <figure>
                                 <img src="./imges/단비식탁.jpg" width="250px" height="250px"/>
                                 <figcaption>
-                                    <div style="width:500px">
+                                    <div style="float: right">
                                         <span>
                                             <h2 class="fn">단비식탁</h2>
                                             <p class="dnl">경상북도 경산시 하양읍 문화로2길 11 문화로2길13</p>
@@ -62,7 +65,7 @@
                             <figure>
                                 <img src="./imges/소소한부엌.jpg" width="250px" height="250px"/>
                                 <figcaption>
-                                    <div style="width:500px">
+                                    <div style="width:100%">
                                         <span>
                                             <h2 class="fn">소소한부엌</h2>
                                             <p class="dnl">경상북도 경산시 하양읍 하양역길 18</p>
@@ -76,6 +79,8 @@
                     </li>
                 </ul>
             </section>
+                </div>
+            </article>
         </main>
     </body>
 </html>
