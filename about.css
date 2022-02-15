@@ -104,29 +104,32 @@ h1{
         font-size: 30px;
     }
 
-    span{
-        display: block;
-    }
-
     .rest{
         margin-left: 10px;
         padding-bottom: 10px;
     }
 
-    figcaption{
-        display: block;
+    .bb{
         position: absolute;
-        left: 0px;
-        bottom: 300px;
-        right: 0px;
-        top: 5px;
+        left: 2px;
+        top: 200px
+    }
+    
+    .fit{
+        width: 100%;
+        height: 200px;
     }
 
     img{
         width: 100%;
-        height: 150px;
+        height: 95%;
+       object-fit: cover;
     }
-
+    
+    .fooditem{
+        height: 300px;
+    }
+    
 }
 
 /* 헤더 */
@@ -190,6 +193,8 @@ figcaption{
 }
 
 .foodli{
+    border-bottom: solid 1px;
+    color: gray;
     display: block;
     padding-top: 10px;
     padding-left: 0px;
