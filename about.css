@@ -123,9 +123,17 @@ h1{
     img{
         width: 100%;
         height: 95%;
-       object-fit: cover;
+        object-fit: cover;
     }
-    
+
+    .inner h1{
+        font-size: 25px;
+    }
+
+    .inner p{
+        font-size: 18px;
+    }
+
     .fooditem{
         height: 300px;
     }
@@ -135,12 +143,12 @@ h1{
 /* 헤더 */
 .inner{
     display: block;
-    padding: 10px 200px;
-    overflow: hidden;
+    padding: 10px 0px;
+    height: 100%;
 }
 
 .inner p{
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
 }
 
