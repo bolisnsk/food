@@ -1,95 +1,284 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>하양 맛집 소개</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="main.css">
+    <script>
+         const saTriggerMargin = 300;
+      const saElementList = document.querySelectorAll('.grid-container');
 
-    <style media="screen">
-      body{
-        margin:0px;
-         font-family: "Malgun Gothic";
-         background-color:#F3F3F3;
+      const saFunc = function() {
+        for (const element of saElementList) {
+          if (!element.classList.contains('show')) {
+            if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+              element.classList.add('show');
+            }
+          }
+        }
       }
 
-      .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        background-color: #F3F3F3;
-        padding: 10px;
-      }
+      window.addEventListener('load', saFunc);
+      window.addEventListener('scroll', saFunc);
 
-      .grid-container > div {
-        background-color: #F3F3F3;
-        border: 10px solid #F3F3F3;
-        text-align: center;
-        font-size: 30px;
-      }
-      .img{
-        position: relative;
-        background-image:url(0222.jpg);
-        background-repeat: no-repeat;
-        width: 140vh;
-        height: 40vh;
-        background-size: cover;
-      }
-
-      .img .content{
-        position: absolute;
-        font-family: "Malgun Gothic";
-        top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        font-size:28px;
-        color: white;
-        z-index: 2;
-        text-align: center;
-      }
-
-
-
-
-    </style>
+    </script>
 
   </head>
   <body>
-    <div class="img">
+    <div class="imges">
        <div class="content">
-           <h3>어서오십쇼!!</h3>
+           <h1>어서오십쇼!!</h1>
        </div>
-       <div class="img-cover"></div>
    </div>
         <h2>한식</h2>
       <div class="grid-container">
-
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-          <div><img src="./0122.jpg"></div>
-
+        <section class="container">
+          <article class="location-listing">
+              <a class="location-title" href="1.html">단비식탁</a>
+              <div class="location-image">
+                  <a href="1.html"> <img src="./imges/단비식탁.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">리틀짜글이</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/소소한부엌.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">유가네 닭갈비</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/유가네.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">하양연가</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/하양연가.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">반계탕&초계국수</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/반계탕.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">대왕비빔밥</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/대왕비빔.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">마왕비빔밥</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/마왕비빔.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">혼샤브</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/혼샤브.jpg"> </a>
+              </div>
+          </article>
+         
       </div>
-        <br><hr>
+      <a href="about.html">
+          <div class="about">더보기></div>
+      </a>
+      <hr>
         <h2>양식</h2>
+        <div class="grid-container">
+            <article class="location-listing">
+              <a class="location-title" href="#">이상한키친</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/이상한키친.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">퀴다</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/퀴다.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">라라코스트</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/라라.jpg"> </a>
+              </div>
+          </article>
+          <div><img src="./imges/하양연가.jpg"></div>
+      </div>
+      <a href="about2.html">
+          <div class="about">더보기></div>
+      </a>
         <hr>
-        <h2>중식</h2>
+        <h2>일식/중식</h2>
+      <div class="grid-container">
+          <article class="location-listing">
+              <a class="location-title" href="#">간큰스시</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/간큰스시.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">델꼬</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/델꼬.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">스시카츠</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/스시카츠.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">키햐아</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/키햐야.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">하양돈부리</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/하양돈부리.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">미미관 마라탕</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/미미관.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">멘마아쯔이</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/멘마.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title" href="#">타코파파</a>
+            <div class="location-image">
+                <a href="#"> <img src="./imges/타코파파.jpg"> </a>
+            </div>
+        </article>
+      </div>
+      <a href="about3.html">
+          <div class="about">더보기></div>
+      </a>
         <hr>
-        <h2>카페/디저트</h2>
+        <h2>분식</h2>
+      <div class="grid-container">
+          <article class="location-listing">
+              <a class="location-title" href="#">영천냄비돈까스&빨간지붕</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/우방분식.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">해피치즈스마일</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/happy.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">불스 떡볶이</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/불스.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">명랑 핫도그</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/명랑.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">삼첩분식</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/삼첩.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">배떡</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/배떡.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">태리로제 떡볶이</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/태리.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title" href="#">엄마분식</a>
+            <div class="location-image">
+                <a href="#"> <img src="./imges/엄마분식.jpg"> </a>
+            </div>
+        </article>
+      </div>
+      <a href="about4.html">
+          <div class="about">더보기></div>
+      </a>
         <hr>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script type="text/javascript">
-      $(".gal").slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true
-      });
-    </script>
+         <h2>카페/디저트</h2>
+      <div class="grid-container">
+          <article class="location-listing">
+              <a class="location-title" href="#">설빙</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/설빙.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">배러댄와플</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/배러댄와플.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">줄리 도넛</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/jully.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">블루웨이 샐러드</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/블루웨이.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">스텀프하우스</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/스탬프.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">요거트월드</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/one.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+              <a class="location-title" href="#">제이네공방</a>
+              <div class="location-image">
+                  <a href="#"> <img src="./imges/제이네.jpg"> </a>
+              </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title" href="#">올더모어</a>
+            <div class="location-image">
+                <a href="#"> <img src="./imges/기억안남.jpg"> </a>
+            </div>
+        </section>
+        </article>
+      </div>
+      <a href="about5.html">
+          <div class="about">더보기></div>
+      </a>
+      <hr>
   </body>
 </html>
