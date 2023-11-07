@@ -38,6 +38,10 @@ body{
     font-size: 30px;
 }
 
+.logofont{
+    font-family: ddag;
+}
+
 .nav_menu{
     font-size: 20px;
     display: flex;

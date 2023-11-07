@@ -1,0 +1,151 @@
+body{
+  margin:0px;
+  font-family: 'Jua', sans-serif;
+  background-color:#F3F3F3;
+}
+
+h3{
+  padding-left: 20px;
+  color:dimgray;
+  text-align: center;
+  font-size: 36px;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+.about{
+  text-align: right;
+  color: dimgray;
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+.main{
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content{
+  font-family: ddag;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  justify-content: center;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* 그리드 */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #F3F3F3;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+.grid-container>.imgaes{
+  padding: 1px;
+}
+
+.grid>.images::before{
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.images {
+  width: 100%;
+  height: auto;
+}
+
+.images img {
+  width: 300px;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-flow: row dense;
+  }
+
+  .images {
+    display: grid;
+    row-gap: 20px;
+    width: 210px;
+  }
+}
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(20,0,10,0.4);
+  color: white;
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+/* 모바일화면 터치 */
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+@font-face {
+  font-family: "ddag";
+  src: url("../Fonts/ddag.ttf") format("truetype");
+} 
+
+@font-face {
+  font-family: "양진체";
+  src: url("../Fonts/양진체v0.9_ttf.ttf") format("truetype");
+} 
