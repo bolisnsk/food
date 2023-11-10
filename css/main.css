@@ -1,7 +1,17 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 body{
-  margin:0px;
-  font-family: 'Jua', sans-serif;
+  font-family: ddag;
   background-color:#F3F3F3;
+  overflow-x: hidden;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 h3{
@@ -13,6 +23,7 @@ h3{
 
 a{
   text-decoration-line: none;
+  color: black;
 }
 
 .about{
@@ -28,61 +39,237 @@ a{
   margin: 0 auto;
 }
 
-.content{
-  font-family: ddag;
-  height: 200px;
-  line-height: 200px;
+.wel{
+  height: auto;
+  line-height: 40px;
   text-align: center;
+  font-size: 16px;
   justify-content: center;
-}
-
-.container{
-  width: 1000px;
-  margin: 0 auto;
 }
 
 /* 그리드 */
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
-  background-color: #F3F3F3;
-  padding: 10px;
-  grid-gap: 10px;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: auto;
 }
 
-.grid-container>.imgaes{
-  padding: 1px;
+.grid-container img { width: 100%;}
+
+/* 메뉴바 */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 8px 12px;
 }
 
-.grid>.images::before{
-  content: "";
-  padding-bottom: 100%;
-  display: block;
+.nav_logo{
+  font-size: 16px;
 }
 
-.images {
+.nav_menu{
+  font-size: 14px;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav_menu li{
+  padding: 8px 30px;
+  text-decoration: none;
+}
+
+.nav_menu li:hover{
+  background: #e7e7e7df;
+}
+
+.nav_toggleBtn{
+  display: none;
+}
+
+.btn{
+  display: none;
+  position: absolute;
+  right: 10px;
+  font-size: 28px;
+  color: black;
+}
+
+.foodlist{
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
 }
 
-.images img {
-  width: 300px;
+.bb{
+  text-align: left;
+  padding-left: 30px;
+}
+
+.fit{
+  padding-bottom: 30px;
+}
+
+/* 헤더 */
+.inner{
+  padding: 10px 0px;
   height: 100%;
-  object-fit: contain;
+  text-align: center;
+}
+
+/* 본문 */
+figcaption{
+  position: absolute;
+  left:260px;
+  top:0px;
+  float: right;
+}
+
+.fn{
+  max-width: 64%;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.3em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.dnl{
+  font-size: 0.5rem;
+  color: #9b9b9b;
+  line-height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+}
+
+.pls{
+  font-size: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-align: right;
+}
+
+.foodli{
+  color: #9b9b9b;
+  width:860px;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+  border-bottom: solid 1px;
+}
+
+.container{
+  background-color: #ffffff;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rest{
+  margin-top: 5px;
+
 }
 
 @media screen and (max-width: 768px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    grid-auto-flow: row dense;
+
+  /**메뉴바**/
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+  }
+  
+  .nav_menu{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
   }
 
-  .images {
-    display: grid;
-    row-gap: 20px;
-    width: 210px;
+  .nav_menu li{
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_logo{
+    font-size: 14px;
+  }
+  
+  .nav_toggleBtn{
+    display: contents;
+  }
+
+  .nav_menu.active {
+    display: flex;
+  }
+
+    /**리스트**/
+  .dnl{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  .foodli{
+    padding-top: 10px;
+  }
+
+  .bb{
+    position: absolute;
+    left: 2px;
+    top: 200px;
+  }
+
+  .location-listing{
+    width: auto;
+  }
+
+  .inner h1{
+    font-size: 20px;
+  }
+
+  .inner p{
+    font-size: 16px;
+  }
+
+  .fooditem{
+    width:100%;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+  }
+
+  figcaption{
+    top:20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contents{
+      width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contents{
+      width: 100%;
   }
 }
 
@@ -103,7 +290,7 @@ a{
 }
 
 .location-title {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
   text-decoration: none;
   z-index: 1;
@@ -129,6 +316,7 @@ a{
 .location-listing:hover .location-image img {
   filter: blur(2px);
 }
+
 
 /* 모바일화면 터치 */
 @media (hover: none) {
