@@ -16,9 +16,9 @@
 <br/>
 ## 👨🏻‍💻 실행 화면
 ### 1. 메인화면
-![Main](https://github.com/bolisnsk/choonsik-test/assets/50792699/4807a25c-02a3-4b73-aeb3-49a9b17c64d6)
+<img width="271" alt="뭐먹양메인" src="https://github.com/bolisnsk/food/assets/50792699/19b97aa7-e7f8-4a03-b05c-74f12923ad2b">
 <li> 더보기 버튼으로 리스트를 추천 리스트를 불러옵니다. </li>
 
 ### 2. 식당 리스트 화면
-![List](https://github.com/bolisnsk/choonsik-test/assets/50792699/e7bd021f-a847-4090-a8f3-9f0b9ef9659b)
+<img width="267" alt="KakaoTalk_20231112_023801834" src="https://github.com/bolisnsk/food/assets/50792699/4daba560-a58b-4bc4-92b6-b18d459e8eef">
 
