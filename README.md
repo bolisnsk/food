@@ -15,7 +15,6 @@
 <br/>
 ## 👨🏻‍💻 실행 화면
 ### 1. 메인 화면
-
 <img width="271" alt="뭐먹양메인" src="https://github.com/bolisnsk/food/assets/50792699/19b97aa7-e7f8-4a03-b05c-74f12923ad2b">
 <li> 더보기 버튼으로 리스트를 추천 리스트를 불러옵니다. </li>
 
