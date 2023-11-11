@@ -26,11 +26,18 @@ a{
   color: black;
 }
 
-.about{
-  text-align: right;
-  color: dimgray;
+.moreBtn{
+  margin-top: 20px;
+  font-family: ddag;
+  background-color: white;
+  color: black;
   font-size: 14px;
   padding: 10px 10px;
+}
+
+.moreBtn:hover{
+  background-color: black;
+  color: white;
 }
 
 .main{
@@ -276,6 +283,7 @@ figcaption{
 /* hover styles */
 .location-listing {
   position: relative;
+  display: none;
 }
 
 .location-image {
