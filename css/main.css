@@ -26,6 +26,11 @@ a{
   color: black;
 }
 
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+
 .moreBtn{
   margin-top: 20px;
   font-family: ddag;
@@ -82,12 +87,10 @@ a{
   display: flex;
   padding-left: 0;
   margin: 0;
-  list-style: none;
 }
 
 .nav_menu li{
   padding: 8px 30px;
-  text-decoration: none;
 }
 
 .nav_menu li:hover{
@@ -106,23 +109,6 @@ a{
   color: black;
 }
 
-.foodlist{
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: relative;
-  margin: 0 auto;
-}
-
-.bb{
-  text-align: left;
-  padding-left: 30px;
-}
-
-.fit{
-  padding-bottom: 30px;
-}
-
 /* 헤더 */
 .inner{
   padding: 10px 0px;
@@ -131,49 +117,6 @@ a{
 }
 
 /* 본문 */
-figcaption{
-  position: absolute;
-  left:260px;
-  top:0px;
-  float: right;
-}
-
-.fn{
-  max-width: 64%;
-  font-size: 1em;
-  color: #555;
-  line-height: 1.3em;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-.dnl{
-  font-size: 0.5rem;
-  color: #9b9b9b;
-  line-height: 1.3em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-top: 5px;
-}
-
-.pls{
-  font-size: 0.5rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  text-align: right;
-}
-
-.foodli{
-  color: #9b9b9b;
-  width:860px;
-  justify-content: center;
-  background-color: white;
-  position: relative;
-  border-bottom: solid 1px;
-}
-
 .container{
   background-color: #ffffff;
   justify-content: center;
@@ -182,13 +125,69 @@ figcaption{
   flex-direction: column;
 }
 
-.rest{
-  margin-top: 5px;
+.foodlist{
+  height: 100%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+}
+
+.list{
+  margin-top: 20px;
+  width: 600px;
+}
+
+.fooditem{
+  background-color: white;
+  position: relative;
 
 }
 
-@media screen and (max-width: 768px) {
+.fig{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px;
+}
 
+figure img{
+  width: 120px;
+  height: 120px;
+}
+
+figcaption{
+  margin-left: 10px;
+}
+
+.itemName{
+  max-width: 64%;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.3em;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.itemAd{
+  font-size: 0.5rem;
+  color: #9b9b9b;
+  line-height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+}
+
+.aboutBtn{
+  font-size: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
   /**메뉴바**/
   .navbar{
     flex-direction: column;
@@ -220,8 +219,12 @@ figcaption{
     display: flex;
   }
 
-    /**리스트**/
-  .dnl{
+  /**리스트**/
+  .list{
+    width: 320px;
+  }
+
+  .itemAd{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -236,12 +239,6 @@ figcaption{
     padding-top: 10px;
   }
 
-  .bb{
-    position: absolute;
-    left: 2px;
-    top: 200px;
-  }
-
   .location-listing{
     width: auto;
   }
@@ -253,28 +250,9 @@ figcaption{
   .inner p{
     font-size: 16px;
   }
-
-  .fooditem{
-    width:100%;
-    height: 300px;
-    background-color: white;
-    position: relative;
-    border-bottom: solid 1px;
-    padding-bottom: 10px;
-  }
-
-  figcaption{
-    top:20px;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .contents{
-      width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
   .contents{
       width: 100%;
   }
@@ -324,7 +302,6 @@ figcaption{
 .location-listing:hover .location-image img {
   filter: blur(2px);
 }
-
 
 /* 모바일화면 터치 */
 @media (hover: none) {

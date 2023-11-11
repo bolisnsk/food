@@ -5,90 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
   maximum-scale=1.0, minimum-scale=1.0">
         <title>하양 맛집 소개</title>
-        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="./css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <script src="about.js" defer></script>
         <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     </head>
     <body>
-        <!-- <main>
-        <article class="contents">
-        -->
-        <nav class="navbar">
-            <div class="nav_logo">
-            
-                <a href="main.html">food</a>
-            </div>
-            <ul class="nav_menu">
-                <li> <a href="about.html">한식</a></li>
-                <li><a href="#">양식</a></li>
-                <li><a href="about3.html">일식/중식</a></li>
-                <li><a href="about4.html">분식</a></li>
-                <li><a href="about5.html">카페/디저트</a></li>
-            </ul>
-
-            <a href="#" class="btn">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </a>
-        </nav>
-
-        <header class="inner">
-            <h1 style="margin: 30px;" >양식</h1>
-        </header>
-         <div class="container">
-            <div class="foodlist">
-                <ul class="rest">
-                    <li class="foodli">
-                        <div class="fooditem">
-                            <figure class="fit">
-                                <img src="./imges/퀴다.jpg" width="250px" height="250px"/>
-                                <figcaption class="bb">
-                                    <div>
-                                        <span>
-                                            <h2 class="fn">퀴다</h2>
-                                            <p class="dnl">경북 경산시 하양읍 대경로 653 휴가오피스텔 103호</p>
-                                        </span>
-                                        <p class="pls">정보 더보기</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-
-                    <li class="foodli">
-                        <div class="fooditem">
-                            <figure class="fit">
-                                <img src="./imges/라라.jpg" width="250px" height="250px"/>
-                                <figcaption class="bb">
-                                    <div>
-                                        <span>
-                                            <h2 class="fn">라라코스트</h2>
-                                            <p class="dnl">경북 경산시 하양읍 하양로 64</p>
-                                        </span>
-                                        <p class="pls">정보 더보기</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                    <li class="foodli">
-                        <div class="fooditem">
-                            <figure class="fit">
-                                <img src="./imges/이상한키친.jpg" width="250px" height="250px"/>
-                                <figcaption class="bb">
-                                    <div>
-                                        <span>
-                                            <h2 class="fn">이상한키친</h2>
-                                            <p class="dnl">경북 경산시 하양읍 문화로 10</p>
-                                            <p class="pls">정보 더보기</p>
-                                        </span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
+        <div class="main">
+            <nav class="navbar">
+                <div class="nav_logo">
+                    <a href="#" class="nav_toggleBtn">
+                        <i class="fas fa-hamburger"></i>
+                    </a>
+                    <a href="main.html">
+                        뭐먹양
+                    </a>
+                </div>
+                <ul class="nav_menu">
+                    <li><a href="about.html">한식</a></li>
+                    <li><a href="">양식</a></li>
+                    <li><a href="about3.html">일식/중식</a></li>
+                    <li><a href="about4.html">카페/디저트</a></li>
                 </ul>
+            </nav>
+            <header class="inner">
+                <h1 style="font-size: 20px;">양식</h1>
+                <p style="font-size: 16px;">파~스타가 땡기는 날</p>
+            </header>
+            <div class="container">
+                <div class="foodlist">
+                    <ul class="list">
+                        <li class="fooditem">
+                            <figure class="fig">
+                                <img src="./imges/퀴다.jpg" width="100px" height="100px"/>
+                                <figcaption>
+                                    <span>
+                                        <h2 class="itemName">퀴다</h2>
+                                        <p class="itemAd">경북 경산시 하양읍 대경로 653 휴가오피스텔 103호</p>
+                                    </span>
+                                    <p class="aboutBtn">정보 더보기</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="fooditem">
+                            <figure class="fig">
+                                <img src="./imges/이상한키친.jpg"/>
+                                <figcaption>
+                                    <span>
+                                        <h2 class="itemName">이상한키친</h2>
+                                        <p class="itemAd">경북 경산시 하양읍 대경로 653 휴가오피스텔 103호</p>
+                                    </span>
+                                    <p class="aboutBtn">정보 더보기</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <script src="./js/about.js" defer></script>
     </body>
 </html>
