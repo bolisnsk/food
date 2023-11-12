@@ -64,7 +64,7 @@ ul{
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));;
+
 }
 
 .grid-container img { width: 100%;}
@@ -134,13 +134,12 @@ ul{
 
 .list{
   margin-top: 20px;
-  width: 600px;
+
 }
 
 .fooditem{
   background-color: white;
   position: relative;
-
 }
 
 .fig{
@@ -161,6 +160,10 @@ figcaption{
   margin-left: 10px;
 }
 
+figcaption span{
+  text-align: left;
+}
+
 .itemName{
   max-width: 64%;
   font-size: 1em;
@@ -171,6 +174,7 @@ figcaption{
 }
 
 .itemAd{
+  width: 200px;
   font-size: 0.5rem;
   color: #9b9b9b;
   line-height: 1.3em;
@@ -228,7 +232,6 @@ figcaption{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 100%;
   }
 
   h1{
