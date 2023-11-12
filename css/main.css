@@ -64,7 +64,7 @@ ul{
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));;
 }
 
 .grid-container img { width: 100%;}
