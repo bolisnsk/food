@@ -13,7 +13,7 @@
         <div class="main">
             <nav class="navbar">
                 <div class="nav_logo">
-                    <a href="#" class="nav_toggleBtn">
+                    <a class="nav_toggleBtn">
                         <i class="fas fa-hamburger"></i>
                     </a>
                     <a href="index.html">
@@ -34,7 +34,7 @@
             <div class="container">
                 <div class="foodlist">
                     <ul class="list">
-                        <li class="fooditem">
+                        <li class="fooditem" id="k" value="10">
                             <figure class="fig">
                                 <img src="./imges/퀴다.jpg"/>
                                 <figcaption>
@@ -42,7 +42,7 @@
                                         <h2 class="itemName">퀴다</h2>
                                         <p class="itemAd">경북 경산시 하양읍 대경로 653 휴가오피스텔 103호</p>
                                     </span>
-                                    <p class="aboutBtn">정보 더보기</p>
+                                    <p class="aboutBtn" onclick="location.href='about1.html?' + k.value">정보 더보기</p>
                                 </figcaption>
                             </figure>
                         </li>
