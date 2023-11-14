@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>하양 맛집 소개</title>
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/about.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     </head>
@@ -26,9 +27,19 @@
                     <li><a href="about4.html">카페/디저트</a></li>
                 </ul>
             </nav>
-            <p id="foodName">
-                
-            </p>
+            <div class="contents">
+                <figure class="fig">
+                    <img src="./imges/유가네.jpg"/>
+                    <figcaption>
+                        <span>
+                            <h2 class="foodName"></h2>
+                            <p class="foodAd"></p>
+                        </span>
+                    </figcaption>
+                </figure>
+                <p> ~ 정보 ~</p>
+                <p class="time"></p>
+            </div>
         </div>
         <script src="./js/data.js"></script>
         <script>
@@ -36,13 +47,17 @@
             data = temp[1].split(",");
             value = data[0];
             console.log(value);
-            /** 검색 결과 표시창 */
-            const foodName = document.querySelector('#foodName');
+            
+            const foodName = document.querySelector('.foodName');
+            const foodAd = document.querySelector('.foodAd');
+            const time = document.querySelector('.time');
             const foodId = Number(value);
             // 해당 데이터 가져오기 콜백함수가 숫자라서 Number 써줘야하는듯?
             const targetData = restaurant.find((data) => data.id === foodId);
             console.log(targetData);
-            foodName.textContent = targetData.name;
+            foodName.innerText = targetData.name;
+            foodAd.innerText = targetData.addres;
+            time.innerText = targetData.time;
         </script>
         <script src="./js/about.js"></script>
     </body>

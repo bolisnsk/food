@@ -148,7 +148,7 @@ ul{
   justify-content: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: solid 1px;
+  border-bottom: solid 1px gray;
 }
 
 figure img{

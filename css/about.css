@@ -1,155 +1,21 @@
+.contents{
+    padding-top: 20px;
+    background-color: white;
+    border-top: 0.1px solid rgb(205, 205, 205);
+}
 
-/*figcaption, figure, header, nav, section, main, div, span {
-    display: block;
-}*/
+.foodName{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.foodAd{
+    font-size: 12px;
+}
 
 @media screen and (max-width: 768px) {
-    /**메뉴바**/
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav_menu{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .nav_menu li{
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn{
-        display: block;
-    }
-
-    .nav_menu.active{
-        display: flex;
-    }
     
-    /**리스트**/
-    .dnl{
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
-    .foodlist{
-        padding-top: 10px;
-    }
-
-    .bb{
-        position: absolute;
-        left: 2px;
-        top: 200px;
-    }
     
-    .fit{
-        width: 100%;
-        height: 200px;
-
-    }
-
-    img{
-        width: 100%;
-        height: 95%;
-        object-fit: cover;
-    }
-
-    .inner h1{
-        font-size: 25px;
-    }
-
-    .inner p{
-        font-size: 18px;
-    }
-
-    .fooditem{
-        width:100%;
-        height: 300px;
-        background-color: white;
-        position: relative;
-        border-bottom: solid 1px;
-        padding-bottom: 10px;
-    }
-    
-    figcaption{
-        top:20px;
-    }
-    
-}
-
-/* 헤더 */
-.inner{
-    display: block;
-    padding: 10px 0px;
-    height: 100%;
-}
-
-.inner p{
-    font-size: 18px;
-    text-align: center;
-}
-
-/* 본문 */
-
-figcaption{
-    display: block;
-    position: absolute;
-    left:260px;
-    top:0px;
-    float: right;
-   
-}
-
-.fn{
-    max-width: 64%;
-    font-size: 1.6em;
-    color: #555;
-    line-height: 1.3em;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-
-.dnl{
-    font-size: 1rem;
-    color: #9b9b9b;
-    line-height: 1.3em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-top: 5px;
-}
-
-.pls{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal;
-    display: inline-block;
-    text-align: right;
-}
-
-.foodli{
-    color: #9b9b9b;
-    display: block;
-    padding: 20px;
-}
-
-.container{
-    background-color: #ffffff;
-}
-
-.rest{
-    margin-top: 5px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
