@@ -1,6 +1,8 @@
 .contents{
-    padding-top: 20px;
-    background-color: white;
+    padding: 10px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
     border-top: 0.1px solid rgb(205, 205, 205);
 }
 
@@ -13,19 +15,38 @@
     font-size: 12px;
 }
 
+.table{
+    display: table;
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.moreInfo{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+    text-align: left;
+    height: 20px;
+}
+
 @media screen and (max-width: 768px) {
-    
+    h3{
+        font-size: 20px;
+    }
+    .contents{
+        width: 90%;
+    }
+
+    .table{
+        width: 60%;
+        font-size: 12px;
+    }
     
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .contents{
-        width: 100%;
-    }
-}
 
-@media (min-width: 1200px) {
-    .contents{
-        width: 100%;
-    }
 }

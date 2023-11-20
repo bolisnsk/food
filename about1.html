@@ -15,7 +15,7 @@
                 <div class="nav_logo">
                     <a class="nav_toggleBtn">
                         <i class="fas fa-hamburger"></i>
-                      </a>
+                    </a>
                     <a href="index.html">
                         뭐먹양
                     </a>
@@ -37,8 +37,27 @@
                         </span>
                     </figcaption>
                 </figure>
-                <p> ~ 정보 ~</p>
-                <p class="time"></p>
+                <h3>주인장의 한줄 평</h3>
+                <span>"<p class="comment"></p>"</span>
+                <p>~ 정보 ~</p>
+                <div class="table">
+                    <div class="moreInfo">
+                        <div class="cell">운영시간 </div>
+                        <div class="cell"><p class="time"></p></div>
+                    </div>
+                    <div class="moreInfo">
+                        <div class="cell">대표 메뉴</div>
+                        <div class="cell"><p class="menu1"></p></div>
+                    </div>
+                    <div class="moreInfo">
+                        <div class="cell"></div>
+                        <div class="cell"><p class="menu2"></p></div>
+                    </div>
+                    <div class="moreInfo">
+                        <div class="cell"></div>
+                        <div class="cell"><p class="menu3"></p></div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="./js/data.js"></script>
@@ -51,13 +70,22 @@
             const foodName = document.querySelector('.foodName');
             const foodAd = document.querySelector('.foodAd');
             const time = document.querySelector('.time');
+            const comment = document.querySelector('.comment');
+            const menu1 = document.querySelector('.menu1');
+            const menu2 = document.querySelector('.menu2');
+            const menu3 = document.querySelector('.menu3');
+
             const foodId = Number(value);
             // 해당 데이터 가져오기 콜백함수가 숫자라서 Number 써줘야하는듯?
             const targetData = restaurant.find((data) => data.id === foodId);
             console.log(targetData);
             foodName.innerText = targetData.name;
             foodAd.innerText = targetData.addres;
+            comment.innerText = targetData.comment;
             time.innerText = targetData.time;
+            menu1.innerText = targetData.menu1;
+            menu2.innerText = targetData.menu2;
+            menu3.innerText = targetData.menu3;
         </script>
         <script src="./js/about.js"></script>
     </body>
