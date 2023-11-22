@@ -8,6 +8,7 @@ const restaurant = [
         menu2 : '매운돈코츠라멘',
         menu3 : '미소라멘',
         comment : '칸막이가 있어 혼밥하기 아주 좋은 곳! 옷걸이도 있어요.',
+        img : '1058.jpg',
     },
     {
         id : 2,
@@ -18,6 +19,7 @@ const restaurant = [
         menu2 : '우유크림도넛',
         menu3 : '말차크림도넛',
         commet : '크림 가득 도넛 맛집! 메뉴는 변동되니 인스타나 배달의 민족을 참고하세요.',
+        img : 'jully.jpg',
     },
     {
         id : 3,
@@ -28,6 +30,7 @@ const restaurant = [
         menu2 : '광어초밥',
         menu3 : '생연어초밥',
         comment : '무난하게 맛있었던 곳! 연어초밥 추천. 돈까스도 맛있어요.',
+        img : '델꼬.jpg',
     },
     {
         id : 4,
@@ -38,6 +41,7 @@ const restaurant = [
         menu2 : '치즈 핫도그',
         menu3 : '핫도그',
         comment : '떡볶이 세트가 가격 괜찮아서 사먹는답니다.',
+        img : '명랑.jpg',
     },
     {
         id : 5,
@@ -48,6 +52,7 @@ const restaurant = [
         menu2 : '마라샹궈',
         menu3 : '꿔바로우',
         comment : '주인장 입맛 저격 마라탕집! 마라탕보다 마라샹궈가 더 맛있어요.',
+        img : '미미관.jpg',
     },
     {
         id : 6,
@@ -58,6 +63,7 @@ const restaurant = [
         menu2 : '사과잼와플',
         menu3 : '초코와플',
         comment : '직접 휘핑하는 크림으로 식물성 크림이 아니랍니다! 생크림 처돌이 주인장이 인정한 크림 맛집.',
+        img : '배러댄와플.jpg',
     },
     
     {
@@ -69,6 +75,7 @@ const restaurant = [
         menu2 : '에그마요 포케',
         menu3 : '그릭요거트',
         comment : '하양 최고의 샐러드집. 양 많고 맛있어요! 그릭요거트 토핑도 풍부하답니다.',
+        img : '블루웨이.jpg',
     },
     {
         id : 8,
@@ -79,6 +86,7 @@ const restaurant = [
         menu2 : '광어초밥',
         menu3 : '고급모듬초밥',
         comment : '주인장 추천 초밥집 원탑. 가격대가 조금 있지만 퀄리티 좋아요.',
+        img : '스시카츠.jpg',
     },
     {
         id : 9,
@@ -89,6 +97,7 @@ const restaurant = [
         menu2 : '순대 (내장 o)',
         menu3 : '어묵탕',
         comment : '하양초 앞에 있는 분식집! 옛날 생각나는 맛이에요.',
+        img : '엄마분식.jpg',
     },
     {
         id : 10,
@@ -99,6 +108,7 @@ const restaurant = [
         menu2 : '목살 플레이트',
         menu3 : '목살 필라프',
         comment : '주인장 최애 양식집. 너무 맛있어요. 양도 1.5인분!',
+        img : '퀴다.jpg',
     },
     {
         id : 11,
@@ -109,6 +119,7 @@ const restaurant = [
         menu2 : '유가네닭갈비',
         menu3 : '숯불닭갈비',
         comment : '무난한 곳. 볶음밥이 한끼 때우기 좋은 가격대.',
+        img : '유가네.jpg',
     },
     {
         id : 12,
@@ -119,6 +130,7 @@ const restaurant = [
         menu2 : '치즈 타코야끼',
         menu3 : '마약세트',
         comment : '주인장 룸메 최애 타코야끼집. 가격이 싸서 가성비 타코야끼로 추천!',
+        img : '타코파파.jpg',
     },
     {
         id : 13,
@@ -129,6 +141,7 @@ const restaurant = [
         menu2 : '김치우동 정식',
         menu3 : '어물우동 정식',
         comment : '6~7000원대에 양 진짜 많고 맛도 있는 집. 카라이 메뉴는 꽤 매워요.',
+        img : '하양돈부리.jpg',
     },
     {
         id : 14,
@@ -139,6 +152,7 @@ const restaurant = [
         menu2 : '육회물회국수',
         menu3 : '육회',
         comment : '직접 만드신 밑반찬과 소고기 무국을 주는 곳! 진짜 맛있어요.',
+        img : '하양연가.jpg',
     },
     {
         id : 15,
@@ -149,5 +163,6 @@ const restaurant = [
         menu2 : '목심 샤브샤브',
         menu3 : '월남쌈',
         comment : '1인 샤브샤브집이라 혼밥하기 아주 좋아요! 평일 런치 메뉴 왕추천. 샐러드바도 무난합니다.',
+        img : '혼샤브.jpg',
     },
 ]
