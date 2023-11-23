@@ -201,6 +201,7 @@ figcaption span{
   white-space: nowrap;
   word-wrap: normal;
   text-align: right;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
