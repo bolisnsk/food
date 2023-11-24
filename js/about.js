@@ -25,4 +25,30 @@ menu2.innerText = targetData.menu2;
 menu3.innerText = targetData.menu3;
 imgs.src = "../imges/" + targetData.img;
 
+naver.maps.Service.geocode({
+    query: targetData.addres
+    }, function(status, response) {
+    if (status !== naver.maps.Service.Status.OK) {
+        return alert('Something wrong!');
+    }
+
+    var result = response.v2, // 검색 결과의 컨테이너
+        items = result.addresses; // 검색 결과의 배열
+
+    let x = parseFloat(items[0].x);
+    let y = parseFloat(items[0].y);
+
+    var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(y, x),
+        zoom: 20
+    });
+
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(y, x),
+        map: map
+    });
+
+});
+
+
 
