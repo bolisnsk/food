@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -6,7 +6,7 @@
 body{
   font-family: ddag;
   background-color: white;
-  overflow-x: hidden;
+
 }
 
 h1{
@@ -63,10 +63,13 @@ ul{
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-
+  margin-top: 20px;
+  padding: 0px 20px;
 }
 
-.grid-container img { width: 100%;}
+.grid-container img { 
+  width: 100%;
+}
 
 /* 메뉴바 */
 .navbar{
@@ -78,14 +81,8 @@ ul{
   top: 0;
   width: 100%;
   z-index: 100;
-  position: relative;
-  border-bottom: solid 1px #d2d2d2;
-}
-
-.navbar.fixed{
-  background-color: rgb(235, 126, 37);
-  transition: all ease 2s 0s;
   position: fixed;
+  border-bottom: solid 1px #d2d2d2;
 }
 
 .nav_logo{
@@ -113,7 +110,7 @@ ul{
 }
 
 .inner{
-  padding: 10px 0px;
+  margin-top: 80px;
   height: 100%;
   text-align: center;
   position: relative;
@@ -126,7 +123,6 @@ ul{
   font-size: 28px;
   color: black;
 }
-
 
 /* 본문 */
 .container{
@@ -287,6 +283,7 @@ figcaption span{
 .location-image {
   line-height: 0;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .location-image img {
