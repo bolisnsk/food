@@ -177,3 +177,8 @@ const restaurant = [
         img : '이상한키친.jpg',
     },
 ]
+
+console.log(restaurant);
+
+var jsonData = JSON.stringify(restaurant);
+console.log(jsonData);

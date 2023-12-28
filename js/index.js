@@ -22,3 +22,12 @@ window.addEventListener("scroll", () => {
         inner.style.top = -scrollNum / 10 + "px";
     }
 });
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 24,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
