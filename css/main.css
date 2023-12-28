@@ -4,7 +4,7 @@
 }
 
 body{
-  font-family: ddag;
+  font-family: 부대;
   background-color: white;
 }
 
@@ -367,6 +367,6 @@ figcaption span{
 } 
 
 @font-face {
-  font-family: "양진체";
-  src: url("../Fonts/양진체v0.9_ttf.ttf") format("truetype");
+  font-family: "부대";
+  src: url("../Fonts/땅스부대찌개\ Light.ttf") format("truetype");
 } 
