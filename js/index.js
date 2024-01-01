@@ -24,10 +24,22 @@ window.addEventListener("scroll", () => {
 });
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 24,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,  //브라우저가 768보다 클 때
+            spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 3,  //브라우저가 1024보다 클 때
+            spaceBetween: 40,
+        },
     },
 });

@@ -210,25 +210,37 @@ figcaption span{
   font-size: 18px;
   background: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   border-radius: 20px;
 }
 
-.swiper-slide img {
-  display: block;
+.swiper-image{
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0px 44px 18px 0px black;
+}
+
+.swiper-image img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
-  transform: scale(1.0);
-  transition: transform 0.3s;
+  transition: transform .5s ease;
+  opacity: 0.9;
 }
 
-.swiper-slide:hover img {
-  border-radius: 20px;
-  transform: scale(1.2);
-  transition: .3s ease-in-out;
+.swiper-image:hover img{
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-slide p{
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -260,6 +272,11 @@ figcaption span{
 
   .nav_menu.active {
     display: flex;
+  }
+
+  .swiper-image{
+    width: 140px;
+    height: 140px;
   }
 
   /**리스트**/
@@ -305,7 +322,7 @@ figcaption span{
   }
 }
 
-/* hover styles */
+/* hover styles
 .location-listing {
   position: relative;
   display: none;
@@ -337,7 +354,6 @@ figcaption span{
   transition: opacity .5s;
   background: rgba(20,0,10,0.4);
   color: white;
-  /* position the text in t’ middle*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,7 +367,7 @@ figcaption span{
   filter: blur(2px);
 }
 
-/* 모바일화면 터치 */
+모바일화면 터치 
 @media (hover: none) {
   .location-title {
     opacity: 1;
@@ -359,7 +375,8 @@ figcaption span{
   .location-image img {
     filter: blur(2px);
   }
-}
+}  
+*/
 
 @font-face {
   font-family: "ddag";
