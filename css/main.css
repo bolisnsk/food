@@ -5,6 +5,7 @@
 
 body{
   font-family: 부대;
+  overflow-x: hidden;
   background-color: white;
 }
 
@@ -202,7 +203,7 @@ figcaption span{
 }
 
 .swiper{
-  margin: 20px 20px;
+  margin: 20px 40px;
 }
 
 .swiper-slide {
@@ -288,6 +289,10 @@ figcaption span{
 
   .nav_menu.active {
     display: flex;
+  }
+
+  .swiper{
+    margin: 20px 20px;
   }
 
   .swiper-image{

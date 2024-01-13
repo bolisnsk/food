@@ -34,12 +34,13 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         320: {
-            slidesPerView: 2,  //브라우저가 768보다 클 때
+            slidesPerView: 2,  
             spaceBetween: 20,
         },
         640: {
-            slidesPerView: 3,  //브라우저가 1024보다 클 때
-            spaceBetween: 40,
+            slidesPerGroup: 3,
+            slidesPerView: 3, 
+            spaceBetween: 20,
         },
     },
 });
