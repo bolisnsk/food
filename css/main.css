@@ -243,6 +243,22 @@ figcaption span{
   margin-top: 20px;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  opacity: 0.8;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: black !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
   /**메뉴바**/
   .navbar{
@@ -277,6 +293,10 @@ figcaption span{
   .swiper-image{
     width: 140px;
     height: 140px;
+  }
+
+  .swiper-slide p{
+    font-size: 12px;
   }
 
   /**리스트**/
