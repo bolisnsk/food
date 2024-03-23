@@ -19,5 +19,5 @@
 <img width="600" alt="뭐먹양메인" src="https://github.com/bolisnsk/food/assets/50792699/770911d2-e51b-43bd-96cc-a36eb7e2d9fc">
 
 ### 2. 식당 리스트 화면
-<img width="267" alt="KakaoTalk_20231112_023801834" src="https://github.com/bolisnsk/food/assets/50792699/4daba560-a58b-4bc4-92b6-b18d459e8eef">
+<img width="267" alt="한식리스트" src="https://github.com/bolisnsk/food/assets/50792699/ad29dcc2-b661-4bfa-954a-7ba266554632">
 
