@@ -13,6 +13,7 @@
 ![badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 <br/>
+
 ## 실행화면
 
 ### 1. 메인 화면
