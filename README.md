@@ -13,7 +13,7 @@
 ![badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 <br/>
-## 👨🏻‍💻 실행 화면
+## 실행화면
 ### 1. 메인 화면
 <br/>
 <img width="600" alt="뭐먹양메인" src="https://github.com/bolisnsk/food/assets/50792699/770911d2-e51b-43bd-96cc-a36eb7e2d9fc">
@@ -21,3 +21,5 @@
 ### 2. 식당 리스트 화면
 <img width="600" alt="한식리스트" src="https://github.com/bolisnsk/food/assets/50792699/ad29dcc2-b661-4bfa-954a-7ba266554632">
 
+### 3. 식당 정보 더보기 화면
+<img width="600" alt="한식리스트" src="https://github.com/bolisnsk/food/assets/50792699/79cf75c1-09fb-47ac-807c-1f0634b44b41">
