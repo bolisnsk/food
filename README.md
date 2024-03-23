@@ -14,7 +14,7 @@
 
 <br/>
 ## 👨🏻‍💻 실행 화면
-### 1. 메인 화면 
+### 1. 메인 화면
 <br/>
 <img width="600" alt="뭐먹양메인" src="https://github.com/bolisnsk/food/assets/50792699/770911d2-e51b-43bd-96cc-a36eb7e2d9fc">
 
