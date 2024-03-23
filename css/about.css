@@ -3,7 +3,7 @@
     width: 800px;
     margin: 0px auto;
     text-align: center;
-    margin-top: 64px;
+    margin-top: 72px;
 }
 
 .foodName{
@@ -17,9 +17,9 @@
 
 .table{
     display: table;
-    margin-top: 10px;
     margin: 0 auto;
     width: 50%;
+    padding-top: 10px;
 }
 
 .moreInfo{
