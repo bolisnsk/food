@@ -22,7 +22,7 @@ h3{
 
 a{
   text-decoration-line: none;
-color : inherit;
+  color : inherit;
 }
 
 ul{
@@ -304,13 +304,13 @@ figcaption span{
   }
 
   .swiper-image{
-    width: 140px;
-    height: 140px;
+    width: 320px;
+    height: 320px;
   }
 
   .swiper-image img{
-    width: 140px;
-    height: 140px;
+    width: 320px;
+    height: 320px;
   }
 
   .swiper-slide p{
